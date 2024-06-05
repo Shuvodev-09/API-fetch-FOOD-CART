@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100" id="home">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white text-2xl font-bold">Food Finder</div>
+            <div>
+                <a href="#home" class="text-white px-4 py-2 rounded hover:bg-gray-700">Home</a>
+                <a href="#catagories" class="text-white px-4 py-2 rounded hover:bg-gray-700">Categories</a>
+                <a href="#search" class="text-white px-4 py-2 rounded hover:bg-gray-700">Search</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div id="home-section" class="w-full mx-auto my-6">
+        <h2 class="my-4 text-3xl text-center text-yellow-600">Welcome to Food Finder</h2>
+        <p class="text-center text-gray-700">Find your favorite meals and recipes.</p>
+    </div>
+
+    <!-- Search Section -->
+    <div id="search" class="w-96 mx-auto my-6">
+       
+        <input id="search-field" class="p-3 w-[80%] border-solid border-2 border-indigo-400 float-left bg-gray-100" type="text" placeholder="Search.." name="search">
+        <button id="search-button" class="bg-blue-400 w-[15%] p-3.5 text-white cursor-pointer hover:bg-blue-500" type="submit"><i class="fa fa-search"></i></button>
+    </div>
+
+    <!-- Error Message -->
+    <div id="error" class="text-center text-red-600 hidden">Wrong key! Please put the right name of food</div>
+
+    <!-- Categories Section -->
+    <div id="catagories" class="w-[90%] mx-auto mb-5 grid grid-cols-3 gap-5"></div>
+
+    <!-- Details Section -->
+    <div id="details" class="w-[45%] mx-auto pb-4"></div>
+
+    <!-- All Food Section -->
+    <div id="all-food" class="container mx-auto w-[90%] grid grid-cols-3 gap-5"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
